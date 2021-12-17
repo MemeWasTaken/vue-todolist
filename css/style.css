@@ -73,6 +73,7 @@ body {
 .checkbox {
     background-color: lightblue;
     border: 1px solid lightslategray;
+    display: block;
     width: 2em;
     height: 2em;
     border-radius: 50%;
