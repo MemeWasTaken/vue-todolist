@@ -1,26 +1,22 @@
 const app = new Vue({
-    el: '#containerVue',
-    data: {
-      tasks: [
-        {
-          textToDo: 'Lorem ipsum dolor sit amet consectetur adipisicing',
-          completed: false,
-        },
-        {
-          textToDo: 'Lorem  adipisicing asda',
-          completed: false,
-        },
-        {
-          textToDo: 'Lorem adipisicing',
-          completed: false,
-        },
-        {
-          textToDo: 'Sit amet consectetur adipisicing',
-          completed: false,
-        },
-      ]
+  el: '#containerVue',
+  data: {
+    tasks: [
+      {
+        textToDo: 'Lorem ipsum dolor sit amet consectetur adipisicing',
+        completed: false,
+      }
+    ]
+  },
+  methods: {
+    checked: function () {
+        if(this.completed == false) {
+            this.completed = true;
+            console.log(this.completed);
+          } else {
+            this.completed = false;
+            console.log(this.completed);
+        }
     },
-    methods: {
-
-    }
-  });
+  },
+});

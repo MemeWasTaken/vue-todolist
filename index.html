@@ -27,8 +27,10 @@
                     </div>
                     <ul class="list-todos">
                         <li v-for="task in tasks">
-                            <p class="text-todo">{{ task.textToDo }}</p>
-                            <div class="checkbox">
+                            <p class="text-todo">
+                                {{ task.textToDo }}
+                            </p>
+                            <div @click="checked" class="checkbox">
                                 
                             </div>
                         </li>
